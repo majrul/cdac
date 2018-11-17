@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Currency Converter</title>
+</head>
+<body>
+<h1>Welcome to My Currency Converter</h1>
+
+<form action="conversion.karo.jaldi" method="post">
+Enter from currency : <input type="text" name="from" /> <br/>
+Enter to currency : <input type="text" name="to" /> <br/>
+Enter amount : <input type="text" name="amount" /> <br/>
+<input type="submit" value="Convert" />
+</form>
+
+</body>
+</html>
