@@ -1,0 +1,18 @@
+What is a Servlet Container and how is it different from a Web Server?
+
+What is Servlet interface. What is GenericServlet. What is HttpServlet?
+
+What is ServletContext ?
+
+What is the life cycle of a Servlet?
+
+What is the role of web.xml file? 
+
+What is load-on-startup in web.xml file?
+
+What is the role of ServletException and IOException used in the signature of
+         service/doGet/doPost method?
+
+Why is Servlet better than conventional CGI?
+
+What is SingleThreadModel interface?
