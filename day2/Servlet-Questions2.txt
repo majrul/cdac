@@ -1,0 +1,24 @@
+Demonstrate a small example on ServletContext PRACTICAL
+
+
+Demonstrate a small example on ServletConfig  PRACTICAL
+
+
+What are Http error codes and how to use them? PRACTICAL
+
+Demonstrate atleast 10 different methods of both HttpServletRequest and HttpServletResponse PRACTICAL
+
+
+How to configure error pages in web.xml PRACTICAL
+
+
+What are Http Headers and how are they sent from the client to
+server and vice-versa? THEORY
+
+Differences between GET and POST? THEORY
+
+What is redirect method and how is it different from forward method THEORY
+
+What is HttpSession and how it works? THEORY
+
+Demonstrate an example on getLastModified(HttpServletRequest req) method of HttpServlet? PRACTICAL
