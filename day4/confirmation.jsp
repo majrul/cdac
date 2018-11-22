@@ -21,5 +21,7 @@ Pincode : <%= form.getPincode() %> <br/>
 Username : <%= form.getUsername() %> <br/>
 Password : <%= form.getPassword() %> <br/> we know your password, hahahaha! <br/>
 
+<br/>
+<a href="storeRegistrationDetails">Click here</a> to submit your details
 </body>
 </html>
