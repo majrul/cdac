@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Products Listing</title>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+$(function() {
+	$("#next").click(function() {
+		load('next');
+	})
+	$("#prev").click(function() {
+		load('prev');
+	})
+	
+	function load(param) {
+		//url = "http://localhost:8080/AjaxPaginationApp/paginationController"
+		var url = "productController?view="+param;
+		$.ajax({
+			url : url,
+			method : 'GET',
+			success : function(data) {
+				//alert(JSON.stringify(data));
+				$.each(data, function(i,elem) {
+					var tr = $("<tr/>");
+					var col1 = $("<td/>").append(elem.id);
+					var col2 = $("<td/>").append(elem.name);
+					var col3 = $("<td/>").append(elem.price);
+					var col4 = $("<td/>").append(elem.quantity);
+					tr.append(col1);
+					tr.append(col2);
+					tr.append(col3);
+					tr.append(col4);
+					$("#productTbl").append(tr);
+					//TODO : clear existing rows
+				})
+			}
+		})
+	}
+})
+</script>
+</head>
+<body>
+
+<table id="productTbl" align="center">
+	<tr><th>ID</th><th>Name</th><th>Price</th><th>Quantity</th>
+	
+	<tr>
+		<th colspan="4">
+			<a href="#" id="next">&gt;&gt;</a>
+			<a href="#" id="prev">&lt;&lt;</a>
+		</th>
+	</tr>
+	
+</table>
+
+</body>
+</html>
