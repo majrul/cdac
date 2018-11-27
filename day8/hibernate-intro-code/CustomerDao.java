@@ -11,7 +11,7 @@ public class CustomerDao {
 
 	public void add(Customer customer) {
 		//Step 1. Create EntityManagerFactory object
-		EntityManagerFactory emf = Persistence.createEntityManagerFactory("hibernate-proj");
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("jpa-example");
 		//Step 2. Create EntityManager object
 		EntityManager em = emf.createEntityManager();
 		//Step 3. Start a transaction
